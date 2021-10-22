@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/people/people",
+    "pages/book/book",
+    "pages/logs/logs",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "叮咚",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "color": "#333",
+    "selectedColor": "#ff5f19",
+    "list": [
+      {
+        "selectedIconPath": "images/muneicon/home_page_n.png",
+        "iconPath": "images/muneicon/home_page_y.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/muneicon/my_y.png",
+        "iconPath": "images/muneicon/my_n.png",
+        "pagePath": "pages/people/people",
+        "text": "我的"
+      },
+      {
+        "selectedIconPath": "images/muneicon/icon_classify_active.png",
+        "iconPath": "images/muneicon/icon_classify.png",
+        "pagePath": "pages/book/book",
+        "text": "书籍"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 150000,
+    "uploadFile": 150000,
+    "downloadFile": 300000,
+    "connectSocket": 150000
+  },
+  "plugins": {
+    "chooseLocation": {
+      "version": "1.0.6",
+      "provider": "wx76a9a06e5b4e693e"
+    },
+    "subway": {
+      "version": "1.0.10",
+      "provider": "wx6aaf93c4435fa1c1"
+    },
+    "routePlan": {
+      "version": "1.0.14",
+      "provider": "wx50b5593e81dd937a"
+      }
+},
+  "permission": {
+    "scope.userLocation": {
+      "desc": "位置信息将应用于叮咚在线接口的效果"
+    }
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

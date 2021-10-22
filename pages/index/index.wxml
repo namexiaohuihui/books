@@ -1,0 +1,64 @@
+<import src='../../templates/footer.wxml' />
+
+<view class='contentListBox' style='height:{{windowHeight}}rpx'>
+
+  <!--index.wxml-->
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="unique">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <button bindtap="ongetimage" class='.usermotto' disabled="{{!buttonClicked}}">{{hellowdata}}</button>
+  <view>
+
+    <view class='setting' bindtap='jumpLogin'>
+      <text class="muen-text">推荐入口</text>
+      <block>
+        <icon type='search' size='12'></icon>
+      </block>
+    </view>
+
+    <view class='menu-recommen-two'>
+    <navigator wx:for="{{classify}}" wx:key="ify" class='menu-item' bindtap='booksMenu' open-type='switchTab' url='/pages/book/book' data-id="{{index}}">
+        <view class="{{item.icon}}"></view>
+        <text class="recommen-text">{{item.text}}</text>
+      </navigator>
+
+
+    </view>
+  </view>
+
+  <view>
+    <view class='setting' bindtap='jumpLogin'>
+      <text class="muen-text">热门书籍</text>
+        <icon type='search' size='12'></icon>
+    </view>
+    <view class='menu-recommend'>
+      <block wx:for="i <= 2" wx:key="i">
+        <view style='margin:20rpx'>
+          <button>便利按钮</button>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="line-text">编辑推荐</view>
+
+<!-- 这是一个侧滑出现删除按钮的item的代码 -->
+<view class="item-box">
+  <view class="items">
+    <view wx:for="{{list}}"  wx:key="{{index}}"  class="item">
+      <view bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" style="{{item.txtStyle}}" class="inner txt">
+      <image class="item-icon" mode="widthFix" src="{{item.icon}}"></image>{{item.txt}}</view>
+      <view data-index="{{index}}" bindtap = "delItem" class="inner del">删除</view>
+    </view>
+  </view>
+</view>
+
+
+  <!--底部商标-->
+  <template is='footer' />
+
+</view>

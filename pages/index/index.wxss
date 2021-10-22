@@ -1,0 +1,136 @@
+/**index.wxss**/
+
+.usermotto {
+  margin-top: 20px;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+  margin: 10rpx;
+}
+
+.muen-text {
+  font-size: 0.8rem;
+  color: #0aaaf6;
+  margin: 10rpx;
+  padding: 10rpx;
+  display: block;
+}
+
+.setting {
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  width: 200rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border-top: 1px solid pink;
+  border-bottom: 2rpx solid pink;
+  border-left: 2rpx solid pink;
+  border-right: 2rpx solid pink;
+}
+
+.menu-recommend {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.menu-recommen-two {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 5rpx;
+}
+
+.menu-recommen-two .menu-item {
+  width: 200rpx;
+  min-height: 80rpx;
+  margin: 10rpx;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 80rpx;
+  flex-grow: 1;
+}
+
+.recommen-text {
+  font-size: 36rpx;
+  color: #0aaaf6;
+  display: flex;
+  justify-content: center;
+  min-height: 80rpx;
+  margin: 2rpx;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  line-height: 80rpx;
+}
+
+.line-text {
+  font-size: 14px;
+  border-left: 2px solid #000;
+  padding-left: 5px;
+  margin: 10px 10px;
+}
+
+/* delect */
+
+.item-box {
+  width: 700rpx;
+  margin: 0 auto;
+  padding: 40rpx 0;
+}
+
+.items {
+  width: 100%;
+}
+
+.item {
+  position: relative;
+  border-top: 2rpx solid #eee;
+  height: 120rpx;
+  line-height: 120rpx;
+  overflow: hidden;
+}
+
+.item:last-child {
+  border-bottom: 2rpx solid #eee;
+}
+
+.inner {
+  position: absolute;
+  top: 0;
+}
+
+.inner.txt {
+  background-color: #fff;
+  width: 100%;
+  z-index: 5;
+  padding: 0 10rpx;
+  transition: left 0.2s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.inner.del {
+  background-color: #e64340;
+  width: 180rpx;
+  text-align: center;
+  z-index: 4;
+  right: 0;
+  color: #fff;
+}
+
+.item-icon {
+  width: 64rpx;
+  vertical-align: middle;
+  margin-right: 16rpx;
+}
+
+.thumb {
+  width: 200px;
+  height: 200px;
+  -webkit-overflow-scrolling: touch;
+  overflow: scroll;
+}

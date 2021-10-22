@@ -1,0 +1,36 @@
+
+.container-people {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+#userinfo {
+  width: 185rpx;
+  height: 185rpx;
+  border-radius: 50%;
+  display: flex;
+  overflow: hidden;
+  text-align: center;
+  /* background-color: aquamarine; */
+}
+/* 顶部商标的格式 */
+.btn {
+  width: 100%;
+  border-radius: 3px;
+  padding-top: 2px;
+  font-size: 14px;
+  overflow: hidden;
+  height: 45px;
+  bottom: 0;
+  position: fixed;
+}
+/* 弹窗图片的限制 */
+.image {
+  width: 150rpx;
+  height: 120rpx;
+  margin: 10rpx 20rpx 0rpx 0rpx;
+  float: left;
+}

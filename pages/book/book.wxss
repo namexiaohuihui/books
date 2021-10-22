@@ -1,0 +1,162 @@
+/* pages/book/book.wxss */
+
+/*  页面切换 */
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #777;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 20%;
+  color: #777;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.on {
+  color: #da7c0c;
+  border-bottom: 5rpx solid #da7c0c;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-box view {
+  text-align: center;
+}
+
+.swiper-items {
+  height: 100%;
+}
+
+.scroll-views {
+  height: 100%;
+}
+
+/*隐藏滚动条*/
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+/** books page gridview*/
+
+.gridview {
+  margin: 5rpx 10rpx 5rpx 10rpx;
+  /**开启以下两个之后整个gv都连在一起*//* position: relative;
+overflow: hidden; *//** gv整体的颜色 */
+  background: #eee;
+}
+
+.gridview:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 5px;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+.gridview:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  /** 整体的左边距 */
+  border-left: 5px solid #d9d9d9;
+  color: #d9d9d9;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+}
+
+.gridview-item {
+  margin: 1% 1% 1% 1%;
+  background: #eee;
+  /** 加上下面一行表示默认的分割线 *//* position: relative; */
+  float: left;
+  /** 内边距可根据实际情况添加 *//* padding: 5px 5px 5px 5px; */
+  width: 48%;
+  box-sizing: border-box;
+}
+
+.gridview-item:before {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  bottom: 0;
+  border-right: 5px solid #d9d9d9;
+  color: #d9d9d9;
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+}
+
+.gridview-item:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #d9d9d9;
+  color: #d9d9d9;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+.gridview-item:active {
+  background-color: #ececec;
+}
+
+.gridview-item__bg {
+  background: #fff;
+  position: relative;
+  float: left;
+  padding: 0px 0px;
+  width: 100%;
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-text {
+ font-size: 36rpx;
+  color: #0aaaf6;
+  min-height: 80rpx;
+  margin: 2rpx;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  line-height: 80rpx;
+}
+
+.nihaoma {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  font-size: 12px;
+  margin: 5px;
+}

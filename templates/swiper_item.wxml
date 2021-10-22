@@ -1,0 +1,39 @@
+<template name='swiper_item'>
+  <view class="swiper-tab">
+
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">书籍</view>
+
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">作者</view>
+
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">出版社</view>
+
+    <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">国家</view>
+  </view>
+
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+
+    <swiper-item>
+
+      <view>书籍swiper-item</view>
+
+    </swiper-item>
+
+    <swiper-item>
+
+      <view>作者swiper-item</view>
+
+    </swiper-item>
+
+    <swiper-item>
+
+      <view>出版社swiper-item</view>
+
+    </swiper-item>
+   <swiper-item>
+
+      <view>国家swiper-item</view>
+
+    </swiper-item>
+  </swiper>
+
+</template>

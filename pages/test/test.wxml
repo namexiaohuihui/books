@@ -1,0 +1,17 @@
+ <!--弹窗代码-->
+  <button class='button' bindtap='buttonTap' type='primary'>获取用户信息</button>
+
+  <modal title="用户权限" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+    <view>
+      <image class="image" src="/images/image.jpg" mode='aspectFill'></image>
+    </view>
+    <view>你说烟雨微芒，兰亭远望;</view>
+    <view>后来轻揽婆娑，深遮霓裳。</view>
+    <view>你说春光烂漫，绿袖红香;</view>
+    <view>后来内掩西楼，静立卿旁。</view>
+    <view>你说软风轻拂，醉卧思量;</view>
+    <view>后来紧掩门窗，漫帐成殇。</view>
+    <view>你说情丝柔肠，如何相忘;</view>
+    <view>我却眼波微转，兀自成霜。</view>
+
+  </modal>

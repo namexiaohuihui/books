@@ -1,0 +1,12 @@
+<template name='footer'>
+  <!--底部商标-->
+  <view class="weui-footer">
+    <view class='trademark-btn'>
+      <!--信息显示-->
+      <view class="weui-footer__links">
+        <navigator url="/pages/index/index" open-type="switchTab" hover-class="other-navigator-hover" class="weui-footer__link">叮咚在线</navigator>
+      </view>
+      <view class="weui-footer__text">DingDong © DingDong专用</view>
+    </view>
+  </view>
+</template>
